@@ -4,15 +4,15 @@ Express + Firebase backend for the Travel Journal mobile app.
 
 ---
 
-## Why Firebase? (Interview Answer)
+## Why Firebase? 
 
-| Criteria | Firebase ✅ | Node + PostgreSQL |
+| Criteria | Firebase  | Node + PostgreSQL |
 |---|---|---|
 | Auth setup | 5 minutes (Google Sign-In built-in) | Hours (OAuth flow, JWT, sessions) |
 | Offline sync | Firestore SDK handles it natively | Build custom sync from scratch |
 | Image storage | Firebase Storage included | S3/Cloudinary setup needed |
 | Real-time | Built-in Firestore listeners | WebSocket infra needed |
-| 48h deadline | ✅ Ships fast | ❌ Too much plumbing |
+| 48h deadline |  Ships fast |  Too much plumbing |
 | Free tier | 50K reads/20K writes/day | Hosting costs money |
 
 ---
