@@ -1,0 +1,45 @@
+{
+  "name": "travel-journal-backend",
+  "version": "1.0.0",
+  "description": "Firebase + Express backend for Travel Journal App",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "nodemon",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "deploy": "npm run build && firebase deploy --only functions",
+    "lint": "eslint src/**/*.ts",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "firebase-admin": "^12.0.0",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "morgan": "^1.10.0",
+    "dotenv": "^16.4.5",
+    "axios": "^1.6.8",
+    "multer": "^1.4.5-lts.1",
+    "express-validator": "^7.0.1",
+    "express-rate-limit": "^7.2.0",
+    "compression": "^1.7.4",
+    "winston": "^3.13.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/cors": "^2.8.17",
+    "@types/morgan": "^1.9.9",
+    "@types/multer": "^1.4.11",
+    "@types/compression": "^1.7.5",
+    "@types/node": "^20.12.5",
+    "typescript": "^5.4.5",
+    "ts-node": "^10.9.2",
+    "nodemon": "^3.1.0",
+    "eslint": "^8.57.0",
+    "@typescript-eslint/parser": "^7.6.0",
+    "@typescript-eslint/eslint-plugin": "^7.6.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

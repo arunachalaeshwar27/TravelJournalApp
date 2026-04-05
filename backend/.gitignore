@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+
+# Env files (VERY IMPORTANT)
+.env
+.env.*
+backend/.env
+backend/.env.*
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build files
+dist/
+build/
+android/build/
+ios/build/
+
+# React Native specific
+android/.gradle/
+android/app/build/
+ios/Pods/
+ios/DerivedData/
+
+# Mac / Windows
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Firebase / sensitive
+serviceAccountKey.json
+google-services.json
+
+# Misc
+coverage/

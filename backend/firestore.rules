@@ -1,0 +1,37 @@
+rules_version = '2';
+
+/**
+ * Firestore Security Rules
+ *
+ * Principle: Server-side (Admin SDK) bypasses these rules.
+ * These rules apply ONLY to direct client SDK access.
+ *
+ * Since we use Admin SDK in our Express backend, these rules
+ * act as a safety net if someone tries to call Firestore directly.
+ */
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ─── Users collection ─────────────────────────────────────────
+    match /users/{userId} {
+      // Users can only read/write their own profile
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+
+    // ─── Journal Entries collection ───────────────────────────────
+    match /journalEntries/{entryId} {
+      // Allow read/write only if authenticated AND entry belongs to user
+      allow read, write: if request.auth != null
+        && request.auth.uid == resource.data.userId;
+
+      // Allow create if authenticated and setting own userId
+      allow create: if request.auth != null
+        && request.auth.uid == request.resource.data.userId;
+    }
+
+    // Block all other collections
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

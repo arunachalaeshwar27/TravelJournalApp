@@ -1,0 +1,78 @@
+> Task :gradle-plugin:checkKotlinGradlePluginConfigurationErrors
+> Task :gradle-plugin:compileKotlin UP-TO-DATE
+> Task :gradle-plugin:compileJava NO-SOURCE
+> Task :gradle-plugin:pluginDescriptors UP-TO-DATE
+> Task :gradle-plugin:processResources UP-TO-DATE
+> Task :gradle-plugin:classes UP-TO-DATE
+> Task :gradle-plugin:jar UP-TO-DATE
+
+> Configure project :react-native-reanimated
+Android gradle plugin: 8.2.1
+Gradle: 8.6
+
+> Task :react-native-gesture-handler:checkKotlinGradlePluginConfigurationErrors
+> Task :react-native-gesture-handler:preBuild UP-TO-DATE
+> Task :react-native-gesture-handler:preDebugBuild UP-TO-DATE
+> Task :react-native-gesture-handler:generateDebugBuildConfig UP-TO-DATE
+> Task :react-native-gesture-handler:generateDebugResValues UP-TO-DATE
+> Task :react-native-gesture-handler:generateDebugResources UP-TO-DATE
+> Task :react-native-gesture-handler:packageDebugResources UP-TO-DATE
+> Task :react-native-gesture-handler:parseDebugLocalResources UP-TO-DATE
+> Task :react-native-gesture-handler:processDebugManifest UP-TO-DATE
+> Task :react-native-gesture-handler:generateDebugRFile UP-TO-DATE
+> Task :react-native-reanimated:assertLatestReactNativeWithNewArchitectureTask SKIPPED
+> Task :react-native-reanimated:assertMinimalReactNativeVersionTask SKIPPED
+> Task :react-native-reanimated:prepareHeadersForPrefab UP-TO-DATE
+> Task :react-native-reanimated:preBuild UP-TO-DATE
+> Task :react-native-reanimated:preDebugBuild UP-TO-DATE
+> Task :react-native-reanimated:generateDebugBuildConfig UP-TO-DATE
+> Task :react-native-reanimated:generateDebugResValues UP-TO-DATE
+> Task :react-native-reanimated:generateDebugResources UP-TO-DATE
+> Task :react-native-reanimated:packageDebugResources UP-TO-DATE
+> Task :react-native-reanimated:parseDebugLocalResources UP-TO-DATE
+> Task :react-native-reanimated:processDebugManifest UP-TO-DATE
+> Task :react-native-reanimated:generateDebugRFile UP-TO-DATE
+> Task :react-native-reanimated:javaPreCompileDebug UP-TO-DATE
+> Task :react-native-reanimated:packageNdkLibs NO-SOURCE
+> Task :react-native-reanimated:compileDebugJavaWithJavac UP-TO-DATE
+> Task :react-native-reanimated:bundleLibCompileToJarDebug UP-TO-DATE
+
+> Task :react-native-gesture-handler:compileDebugKotlin FAILED
+e: Supertypes of the following classes cannot be resolved. Please make sure you have the required dependencies in the classpath:
+    class com.facebook.react.viewmanagers.RNGestureHandlerButtonManagerInterface, unresolved supertypes: ViewManagerWithGeneratedInterface
+    class com.facebook.react.viewmanagers.RNGestureHandlerRootViewManagerInterface, unresolved supertypes: ViewManagerWithGeneratedInterface
+Adding -Xextended-compiler-checks argument might provide additional information.
+
+e: file:///Users/iyyappan/Projects/own/TravelJournalApp/node_modules/react-native-gesture-handler/android/src/main/java/com/swmansion/gesturehandler/react/RNGestureHandlerButtonViewManager.kt:42:1 Cannot access 'ViewManagerWithGeneratedInterface' which is a supertype of 'com.swmansion.gesturehandler.react.RNGestureHandlerButtonViewManager'. Check your module classpath for missing or conflicting dependencies
+e: file:///Users/iyyappan/Projects/own/TravelJournalApp/node_modules/react-native-gesture-handler/android/src/main/java/com/swmansion/gesturehandler/react/RNGestureHandlerButtonViewManager.kt:49:5 Cannot access 'ViewManagerWithGeneratedInterface' which is a supertype of 'com.swmansion.gesturehandler.react.RNGestureHandlerButtonViewManager'. Check your module classpath for missing or conflicting dependencies
+e: file:///Users/iyyappan/Projects/own/TravelJournalApp/node_modules/react-native-gesture-handler/android/src/main/java/com/swmansion/gesturehandler/react/RNGestureHandlerButtonViewManager.kt:49:107 Cannot access 'ViewManagerWithGeneratedInterface' which is a supertype of 'com.swmansion.gesturehandler.react.RNGestureHandlerButtonViewManager'. Check your module classpath for missing or conflicting dependencies
+e: file:///Users/iyyappan/Projects/own/TravelJournalApp/node_modules/react-native-gesture-handler/android/src/main/java/com/swmansion/gesturehandler/react/RNGestureHandlerButtonViewManager.kt:149:5 Cannot access 'ViewManagerWithGeneratedInterface' which is a supertype of 'com.swmansion.gesturehandler.react.RNGestureHandlerButtonViewManager'. Check your module classpath for missing or conflicting dependencies
+e: file:///Users/iyyappan/Projects/own/TravelJournalApp/node_modules/react-native-gesture-handler/android/src/main/java/com/swmansion/gesturehandler/react/RNGestureHandlerButtonViewManager.kt:154:71 Cannot access 'ViewManagerWithGeneratedInterface' which is a supertype of 'com.swmansion.gesturehandler.react.RNGestureHandlerButtonViewManager'. Check your module classpath for missing or conflicting dependencies
+e: file:///Users/iyyappan/Projects/own/TravelJournalApp/node_modules/react-native-gesture-handler/android/src/main/java/com/swmansion/gesturehandler/react/RNGestureHandlerButtonViewManager.kt:156:3 Class 'ButtonViewGroup' is not abstract and does not implement abstract member public abstract fun getPointerEvents(): PointerEvents! defined in com.facebook.react.uimanager.ReactPointerEventsView
+e: file:///Users/iyyappan/Projects/own/TravelJournalApp/node_modules/react-native-gesture-handler/android/src/main/java/com/swmansion/gesturehandler/react/RNGestureHandlerButtonViewManager.kt:217:5 'pointerEvents' overrides nothing
+e: file:///Users/iyyappan/Projects/own/TravelJournalApp/node_modules/react-native-gesture-handler/android/src/main/java/com/swmansion/gesturehandler/react/RNGestureHandlerRootViewManager.kt:16:1 Cannot access 'ViewManagerWithGeneratedInterface' which is a supertype of 'com.swmansion.gesturehandler.react.RNGestureHandlerRootViewManager'. Check your module classpath for missing or conflicting dependencies
+e: file:///Users/iyyappan/Projects/own/TravelJournalApp/node_modules/react-native-gesture-handler/android/src/main/java/com/swmansion/gesturehandler/react/RNGestureHandlerRootViewManager.kt:23:5 Cannot access 'ViewManagerWithGeneratedInterface' which is a supertype of 'com.swmansion.gesturehandler.react.RNGestureHandlerRootViewManager'. Check your module classpath for missing or conflicting dependencies
+e: file:///Users/iyyappan/Projects/own/TravelJournalApp/node_modules/react-native-gesture-handler/android/src/main/java/com/swmansion/gesturehandler/react/RNGestureHandlerRootViewManager.kt:23:116 Cannot access 'ViewManagerWithGeneratedInterface' which is a supertype of 'com.swmansion.gesturehandler.react.RNGestureHandlerRootViewManager'. Check your module classpath for missing or conflicting dependencies
+e: file:///Users/iyyappan/Projects/own/TravelJournalApp/node_modules/react-native-gesture-handler/android/src/main/java/com/swmansion/gesturehandler/react/RNGestureHandlerRootViewManager.kt:26:79 Cannot access 'ViewManagerWithGeneratedInterface' which is a supertype of 'com.swmansion.gesturehandler.react.RNGestureHandlerRootViewManager'. Check your module classpath for missing or conflicting dependencies
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':react-native-gesture-handler:compileDebugKotlin'.
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+   > Compilation error. See log for more details
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.6/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 11s
+23 actionable tasks: 3 executed, 20 up-to-date
